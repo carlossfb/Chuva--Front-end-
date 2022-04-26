@@ -1,0 +1,181 @@
+/*Iniciando a pag*/
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+/*anexando linear-gradient padrão como no projeto do figma*/
+.bg-aside,
+.modal-header,
+.navbar-dark {
+  background: linear-gradient(#ffb354, #ee7a3a);
+  color: #fff;
+}
+/*tratamento de peso das fontes de acordo com o protótipo*/
+.title {
+  font-weight: 700;
+  font-size: 30px;
+}
+.bg-top,
+.card-top {
+  background: #fdf1eb;
+}
+.bg-top {
+  color: #725c5c;
+}
+.card-top {
+  color: #4e4e4e;
+  font-weight: 500;
+  font-size: 20px;
+}
+.roboto-s {
+  font-size: 14px;
+}
+.roboto-m {
+  font-size: 22px;
+}
+
+/* .lang,
+.perfil-txt,
+.link-aside {
+  font-family: "Quicksand", sans-serif;
+} */
+
+/* .perfil {
+  border-radius: 50%;
+}
+.perfil-txt {
+  font-size: 14px;
+  font-weight: 500;
+} */
+
+.link-aside {
+  font-size: 15px;
+  color: #725c5c;
+}
+h1 {
+  color: #ed7839;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.btn-dark {
+  background: #ed7839;
+  border: #ed7839;
+}
+
+/*Tratando a aside*/
+aside,
+.side {
+  width: 300px;
+  float: left;
+}
+.side {
+  height: 75px;
+}
+.sidebar {
+  height: 100vw;
+}
+
+/*Tratamento dos cards e spam relacionados a eles*/
+.card {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+.card-header {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+.spam-side {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ed7839;
+}
+.soft {
+  color: rgb(155, 155, 155);
+}
+.card-text {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  color: #5c5c5c;
+  max-height: 400px;
+}
+.card-h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ed7839;
+}
+.card-content {
+  color: #595959;
+}
+/*Tratamento principal do comportamento do card lateral (direita)*/
+@media (min-width: 1500px) {
+  .card-text-1 {
+    max-height: 380px;
+  }
+}
+@media (max-width: 1500px) {
+  .card-text-1 {
+    max-height: 280px;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1350px) {
+  .card-text-1 {
+    max-height: 250px;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1270px) {
+  .card-text-1 {
+    max-height: 200px;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1190px) {
+  .card-text-1 {
+    max-height: 150px;
+    overflow: scroll;
+  }
+  .side-nav {
+    display: none;
+  }
+  .bg-top {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .bg-top {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+}
+.imagens {
+  display: flex;
+  justify-content: center;
+}
+
+/*Botão de + topicos*/
+.btn-topicos {
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  color: #fff;
+  margin: -80px;
+}
