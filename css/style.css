@@ -50,10 +50,16 @@ html {
   font-weight: 500;
 } */
 
+/*Links da nav*/
 .link-aside {
   font-size: 15px;
   color: #725c5c;
 }
+.link-aside:hover {
+  background: #FDF1EB;
+  border-left: 10px solid #ee7a3a;
+}
+
 h1 {
   color: #ed7839;
   font-weight: 900;
@@ -66,18 +72,22 @@ h1 {
 }
 
 /*Tratando a aside*/
-aside,
-.side {
-  width: 300px;
-  float: left;
+aside{
+  width:20%;
+  float:left;
 }
 .side {
   height: 75px;
 }
 .sidebar {
-  height: 100vw;
+  height: 120vw;
 }
 
+@media (min-width: 1500px) {
+  .card-text-1 {
+    max-height: 380px;
+  }
+}
 /*Tratamento dos cards e spam relacionados a eles*/
 .card {
   font-family: "Quicksand";
@@ -85,33 +95,42 @@ aside,
   font-weight: 400;
   font-size: 12px;
 }
-.card-header {
+/*Reaproveitando declaração da fonte e peso*/
+.card-header, .spam-side {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
+}
+.card-header {
   font-size: 20px;
   line-height: 25px;
 }
 .spam-side {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   color: #ed7839;
 }
+
 .soft {
   color: rgb(155, 155, 155);
 }
-.card-text {
+/*Reaproveitando declaração de fonte e peso*/
+.card-text, .subcard-content {
   font-family: "Quicksand";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+}
+.card-text{
   line-height: 23px;
   letter-spacing: 0.02em;
   color: #5c5c5c;
-  max-height: 400px;
 }
+.subcard-content{
+  line-height: 18px;
+  color: #4D4D4D;
+}
+
+/*Tratando os títulos e subs dos cards*/
 .card-h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -120,6 +139,23 @@ aside,
   line-height: 21px;
   color: #ed7839;
 }
+.card-h2{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ED7839;
+}
+.card-h3{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+
 .card-content {
   color: #595959;
 }
@@ -147,6 +183,13 @@ aside,
     overflow: scroll;
   }
 }
+/*Aqui a nav lateral será escondida*/
+@media (min-width: 1191px){
+  .side2{
+    float:right;
+    width:80%;
+  }
+}
 @media (max-width: 1190px) {
   .card-text-1 {
     max-height: 150px;
@@ -156,7 +199,7 @@ aside,
     display: none;
   }
   .bg-top {
-    padding-left: 50px;
+    padding-left: 20px;
     padding-right: 50px;
   }
 }
@@ -164,6 +207,11 @@ aside,
   .bg-top {
     padding-left: 25px;
     padding-right: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .icone-card{
+    padding:30px;
   }
 }
 .imagens {
@@ -179,3 +227,87 @@ aside,
   color: #fff;
   margin: -80px;
 }
+
+.btn-heart{
+  background:#ED7839;
+}
+.link-cards{
+  font-size: 14px;
+  line-height: 19px;
+  color: #757575;
+}
+.text-orange{
+  color:#ED7839;
+}
+.texto{
+  display:none;
+}
+.form-text-center{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+.form-label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ED7839;
+}
+.staff{
+  background:#F8F8F8;
+}
+.staff-right{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ED7839;
+}
+.comentario-titulo{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #5C5C5C;
+}
+.btn-enviar{
+  color:#fff;
+  background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
+  border-radius: 0px 0px 4px 0px;
+  width:150px;
+}
+.div-btn{
+  background:#EAF1F2;
+  margin-top:-18px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 0px 0px 4px 4px;
+}
+.border-bot{
+  border-bottom: none;
+}
+.btn-purple{
+  background:#71478e;
+  color:#fff;
+}
+.footer-content{
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color:#94918f;
+}
+.footer-content .bolder{
+ color: #615e5d;
+}
+
