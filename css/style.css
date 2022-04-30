@@ -51,6 +51,20 @@ html {
 } */
 
 /*Links da nav*/
+.toggle{
+  width:300px;
+}
+
+/*Tratando o modal menu*/
+@media (min-width: 1190px) {
+ .nav-mob{
+   display:none;
+ }
+ .modal-backdrop{
+    display:none;
+ }
+}
+
 .link-aside {
   font-size: 15px;
   color: #725c5c;
@@ -197,6 +211,9 @@ aside{
   }
   .side-nav {
     display: none;
+  }
+  h1{
+    padding:10px;
   }
   .bg-top {
     padding-left: 20px;

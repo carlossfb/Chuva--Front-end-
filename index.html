@@ -9,7 +9,7 @@
     />
     <!-- Jquery externo -->
     <script src="index.js" defer></script>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Meu CSS -->
@@ -25,31 +25,69 @@
     <title>SLACA 2019</title>
   </head>
   <body>
-    <!--Sidebar que será exibida durante a experiência desktop-->
-    <aside class="side-nav border-end">
-
-        <div class="sidebar border-right text-center">
-	  <div class="side pt-2 bg-aside">
-	  <spam class="text-light title">SLACA 2019</spam>
+    <section  class="nav-mob">
+      <!-- Button trigger modal **só aparece em dispositivos mob-->
+      <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
+      </nav>
+      <!-- Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog toggle modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SLACA 2019</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body px-0 text-center">
+                <div class="container">
+                  <img class="px-1 img-fluid" id="" src="assets/logo.png" />
+                </div>
 
-        <div class="container">
-          <img class="px-1 img-fluid" id="" src="assets/logo.png" />
+              <ul class="list-group list-group-flush">
+                <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Apresentação</li></a>
+                <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Comitês</li></a>
+                <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Autores</li></a>
+                <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Eixos temáticos</li></a>
+                <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Contato</li></a>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Apresentação</li></a>
-          <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Comitês</li></a>
-          <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Autores</li></a>
-          <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Eixos temáticos</li></a>
-          <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Contato</li></a>
-        </ul>
       </div>
+  </section>
+    <!--Sidebar que será exibida durante a experiência desktop-->
+     <aside class="side-nav border-end">
+        <div class="sidebar border-right text-center">
+              <div class="side pt-2 bg-aside">
+                <spam class="text-light title">SLACA 2019</spam>
+              </div>
+
+              <div class="container">
+                <img class="px-1 img-fluid" id="" src="assets/logo.png" />
+              </div>
+
+            <ul class="list-group list-group-flush">
+              <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Apresentação</li></a>
+              <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Comitês</li></a>
+              <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Autores</li></a>
+              <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Eixos temáticos</li></a>
+              <a class="nav-link p-0" href="#"><li class="list-group-item link-aside">Contato</li></a>
+            </ul>
+        </div>
     </aside>
     <!--Fim sidebar -->
 <div class="side2">
     <!--Nav com o texto inicial e o login-->
     <div class="row ms-0">
-      <div class="col-md-9 pt-1 bg-top">
+      <div class="col-md-8 pt-1 bg-top">
         <div class="roboto-s">
           Anais do Simpósio Latino Americano de Ciências de Alimentos
         </div>
@@ -113,7 +151,7 @@
       </div>
     </section>
     <!--Fim do Card-->
-
+    
     <!--Iniciando as sections de conteúdo, segunda linha de blocos-->
     <section class="row p-sm-4 spacerx">
       <div class="col mx-2">
@@ -183,7 +221,7 @@
                       <spam class="card-h2">Assunto da pergunta aparece aqui</spam><br>
                       <spam class="card-h3">Carlos Henrique Santos</spam>
                    <p class="card-content subcard-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p> 
-                   <img src="assets/menu.png"> <button class="mx-3 btn btn-sm btn-heart"><img src="assets/heart.png"></button> <spam class="link-cards mx-2"> 1 Like </spam> <spam class="link-cards" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 1 Resposta </spam>
+                   <img src="assets/menu.png"> <button class="mx-3 btn btn-sm btn-heart"><img src="assets/heart.png"></button> <spam class="link-cards mx-2"> 1 Like </spam> <spam class="link-cards" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> 1 Resposta </spam>
                   </p>
                 </div>
               </div>
@@ -209,7 +247,7 @@
                       <spam class="card-h2">Assunto da pergunta aparece aqui</spam><br>
                       <spam class="card-h3">Carlos Henrique Santos</spam>
                    <p class="card-content subcard-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p> 
-                   <img src="assets/menu.png"> <button class="mx-3 btn btn-sm btn-heart"><img src="assets/heart.png"></button> <spam class="link-cards mx-2"> 1 Like </spam> <spam data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="link-cards"> 1 Resposta </spam>
+                   <img src="assets/menu.png"> <button class="mx-3 btn btn-sm btn-heart"><img src="assets/heart.png"></button> <spam class="link-cards mx-2"> 1 Like </spam> <spam data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" class="link-cards"> 1 Resposta </spam>
                   </p>
                 </div>
               </div>
@@ -279,48 +317,13 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-/*         //Aqui nós criamos a interação com o "...ver mais" do texto grande que temos em resumo -> Jquery
-        $("#botao-mais").click(mostraMais);
-        function mostraMais() {
-              $(".texto").toggle();
-              if($("#botao-mais").text() === '...Ver mais') {
-                 $("#botao-mais").text('Ver menos')
-              } 
-              else {
-                $("#botao-mais").text('...Ver mais')
-              }
-        };
-        //Aqui nós alteramos o html de discussões para aparecer um pequeno form -> Jquery
-        $("#btn-topicos").click(function(){
-        $("#topicos-hide").hide();
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        var content = "<div id='form'><p class='form-text-center'>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>"+
-                      "<div class='mb-3'>"+
-                        "<label for='ControlInput1' class='form-label'>Email address</label>"+
-                        "<input type='text' class='form-control' id='ControlInput1' placeholder='Assunto'>"+
-                      "</div>"+
-                        "<div class='mb-3'>"+
-                          "<label for='ControlTextarea1' class='form-label'>Conteúdo</label>"+
-                          "<textarea class='form-control' id='ControlTextarea1' rows='3'></textarea>"+
-                        "</div>"+
-			"</div>"+
-                        "<div class='d-flex justify-content-end div-btn'><button id='btn-enviar' class='btn btn-dark btn-enviar'>Enviar</button></div>";
-
-        $("#content").html(content);
-       }); */
-      
-
-  </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+ <!-- Option 2: Separate Popper and Bootstrap JS -->
+ <!--
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ -->
   </body>
 </html>
