@@ -24,9 +24,19 @@ var content = "<div id='form'><p class='form-text-center'>Tem uma dúvida ou sug
                   "<label for='ControlTextarea1' class='form-label'>Conteúdo</label>"+
                   "<textarea class='form-control' id='ControlTextarea1' rows='3'></textarea>"+
                 "</div>"+
-    "</div>"+
+                  "</div>"+
                 "<div class='d-flex justify-content-end div-btn'><button id='btn-enviar' class='btn btn-dark btn-enviar'>Enviar</button></div>";
-
-$("#content").html(content);
+                //Escreve o formulário
+                $("#content").html(content);
+                //captura o botão pelo id para a confirmação de envio
+                $("#btn-enviar").click(function(){
+                  
+                  var content2 = "<p class='text-center card-h1'>Seu tópico foi enviado com sucesso! :D</p>"+
+                                  "<p class='confirmacao'>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>"+
+                                  "<p class='confirmacao2'>Descubra outros trabalhos!</p>"+
+                                  "<div class='text-center'><button class='px-5  my-2 btn btn-dark btn-topicos'>Criar novo tópico</button></div>";
+                
+                  $("#content").html(content2);
+                  });
 });
 

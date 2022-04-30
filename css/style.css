@@ -36,19 +36,19 @@ html {
   font-size: 22px;
 }
 
-/* .lang,
+.lang,
 .perfil-txt,
 .link-aside {
   font-family: "Quicksand", sans-serif;
-} */
+} 
 
-/* .perfil {
+ .perfil {
   border-radius: 50%;
 }
 .perfil-txt {
   font-size: 14px;
   font-weight: 500;
-} */
+} 
 
 /*Links da nav*/
 .toggle{
@@ -94,7 +94,7 @@ aside{
   height: 75px;
 }
 .sidebar {
-  height: 120vw;
+  height: 110vw;
 }
 
 @media (min-width: 1500px) {
@@ -212,6 +212,9 @@ aside{
   .side-nav {
     display: none;
   }
+  .login{
+    display: none;
+  }
   h1{
     padding:10px;
   }
@@ -326,5 +329,24 @@ aside{
 }
 .footer-content .bolder{
  color: #615e5d;
+}
+.confirmacao{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #595959;
+}
+.confirmacao2{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 137.5%;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #F48F44;
 }
 
